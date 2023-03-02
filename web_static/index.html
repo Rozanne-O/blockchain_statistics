@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Blockchain Statistics</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src=images/BC2.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">STATISTICS</a></li>
+                    <li><a href="">BLOG</a></li>
+                    <li><a href="">CONTACTS</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+    <div class="text-box">
+        <h1>Exceptional Blockchain Statistics</h1>
+        <p>Blockchain is the future. Learning how to collect, analyze, and interpret data helps in better <br>decision-making for your business. Get your updated information from us.
+        </p>
+        <a href="" class="hero-btn">Visit Us for more information</a>
+    </div>
+    
+    </section>
+
+<!------Statistics------>
+
+<section class="statistics">
+    <h1>Information We Offer</h1>
+    <p>The one-stop place for cryptographic ledger.</p>
+
+    <div class="row">
+        <div class ="statistics-col">
+            <h3>stats</h3>
+            <p>This section displays the overall statistics for blockchain miners</p>
+        </div>
+        <div class ="statistics-col">
+            <h3>reports</h3>
+            <p>This section displays a written-report analysis for blockchain miners statistics</p>
+        </div>
+        <div class ="statistics-col">
+            <h3>summaries</h3>
+            <p>This section displays the summary for blockchain miners statistics</p>
+        </div>
+        <button>
+            Search
+        </button>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--------JavaScript for Toggle Menu-------->
+    <script>
+
+        var navLinks =document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+
+
+
+
+</body>
+</html>
