@@ -54,8 +54,8 @@
             <h3>summaries</h3>
             <p>This section displays the summary for blockchain miners statistics</p>
         </div>
-        <a href ="https://www.blockchain.com/explorer/charts/hash-rate">
-        <button>Click Me</button>
+        <a href ="">
+        <button></button>
         </a>
     </div>
 </section>
@@ -70,6 +70,16 @@
         function hideMenu(){
             navLinks.style.right = "-200px";
         }
+        const apiKey = "nbqqt2H2n9X0GKvm";
+        const apiUrl = "https://pool.braiins.com/accounts/hash_rate_daily/json/group/btc";
+        async function checkHashrate(){
+            const response = await fetch(apiUrl + `&appid=${apiKey}`);
+            var data = await response.json();
+
+            console.log(data);
+
+        }
+        checkHashrate();
 
     </script>
 </body>
